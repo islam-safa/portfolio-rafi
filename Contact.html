@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Safa islam</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </header>
+
+                 <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+                
+<section class="contact"id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" name="Email" placeholder="Email Address">
+    </div>
+    <div class="input-box">
+      <input type="number" placeholder="Phone Number">
+      <input type="text" placeholder="Email Subject">
+    </div>
+    <textarea name="message" id="" cols="20" rows="10" placeholder="Your Message"></textarea>
+    <a href="#"><input type="submit" value="Send Message" class="btn"></a>
+    
+  </form>
+</section>
+<footer class="footer">
+  <div class="social">
+        <a href="tel:+8801684889419"><i class="fa-solid fa-phone-volume"></i></a>
+        <a href="https://www.facebook.com/safa.islam.802399?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://wa.me/qr/YKJIJDYHBQFPO1"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <p align="center">CopyRight By Safa Islam</p>
+</footer>
+
+</body>
+</html>
+
+
+ 

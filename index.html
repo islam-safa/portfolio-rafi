@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Safa islam</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="v1.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>Safa Islam</h1>
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum 
+                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, 
+                        autem molestiae!
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="Safa Islam (Autosaved).docx" class="btn active">Download CV</a>
+                       <a href="tel:+8801684889419" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/safa.islam.802399?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/islam-safa"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/qr/YKJIJDYHBQFPO1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+8801684889419"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Content Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+<section class="about">
+  <div class="main">
+    <img src="v1.jpg" alt="">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h5>Web devoloper <span>
+        & Designer
+      </span></h5>
+<p>
+  I am a passionatecweb developer and a designer with a creative mind and love for building beautiful and functional Websites. I am a passionatecweb developer and a designer with a creative mind and love for building beautiful and functional Websites. I am a passionatecweb developer and a designer with a creative mind and love for building beautiful and functional Websites.
+</p>
+  <div class="btn-group">
+ <a href="my cv/" class="btn active">Resume</a>
+</div>
+</div>
+</div>
+</section>
+
+ <section class="projects" id="projects">
+        <h2 class="heading">
+            My <span>Projects</span>
+        </h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <h3>Online BookShop</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/book/" class="btn">See More</a>
+            </div>
+            <div class="projects-box">
+                <h3>E-commerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/ecommerce/" class="btn">See More</a>
+            </div>
+            <div class="projects-box">
+                <h3>Personal Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/developerm/" class="btn">See More</a>
+            </div>
+            </div>
+    
+        <div class="projects-container">
+            <div class="projects-box">
+                <h3>Marksheet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/hpp-html/" class="btn">See More</a>
+            </div>
+            <div class="projects-box">
+                <h3>Congratulations!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/glass/" class="btn">See More</a>
+            </div>
+            <div class="projects-box">
+                <h3>Watche,Bag,Shoe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati neque praesentium explicabo? Ullam adipisci culpa,
+                     quas voluptatem eaque doloribus! Temporibus ration</p>
+                     <a href="https://safa-islam1234.github.io/bag-shoes/" class="btn">See More</a>
+                </div>
+        </div>
+    </section>
+   
+<section class="skills-section" id="skills">
+ <h2 class="section-title">My <span>Skills</span></h2>
+    
+          <div class="skill">
+              <div class="skill-header">
+                  <span>HTML</span>
+                  <span class="skill-percent" id="html-percent">80%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="html-progress" style="width: 80%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-header">
+                  <span>CSS</span>
+                  <span class="skill-percent" id="css-percent">70%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="css-progress" style="width: 70%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-header">
+                  <span>BOOTSTRAP</span>
+                  <span class="skill-percent" id="bootstrap-percent">60%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="bootstrap-progress" style="width: 60%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header">
+                <span>TAILWIND CSS</span>
+                <span class="skill-percent" id="tailwind-percent">40%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="tailwind-progress" style="width: 40%;"></div>
+            </div>
+        </div>
+       </div>
+  </section>
+ 
+<section class="contact"id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" name="Email" placeholder="Email Address">
+    </div>
+    <div class="input-box">
+      <input type="number" placeholder="Phone Number">
+      <input type="text" placeholder="Email Subject">
+    </div>
+    <textarea name="message" id="" cols="20" rows="10" placeholder="Your Message"></textarea>
+    <a href="#"><input type="submit" value="Send Message" class="btn"></a>
+    
+  </form>
+</section>
+<footer class="footer">
+  <div class="social">
+        <a href="tel:+8801684889419"><i class="fa-solid fa-phone-volume"></i></a>
+        <a href="https://www.facebook.com/safa.islam.802399?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://wa.me/qr/YKJIJDYHBQFPO1"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <p align="center">CopyRight By Safa Islam</p>
+</footer>
+
+</body>
+</html>
+
+
+ 

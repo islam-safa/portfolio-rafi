@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Safa islam</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+             <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+               
+<section class="skills-section" id="skills">
+ <h2 class="section-title">My <span>Skills</span></h2>
+    
+          <div class="skill">
+              <div class="skill-header">
+                  <span>HTML</span>
+                  <span class="skill-percent" id="html-percent">80%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="html-progress" style="width: 80%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-header">
+                  <span>CSS</span>
+                  <span class="skill-percent" id="css-percent">70%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="css-progress" style="width: 70%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-header">
+                  <span>BOOTSTRAP</span>
+                  <span class="skill-percent" id="bootstrap-percent">60%</span>
+              </div>
+              <div class="progress-bar">
+                  <div class="progress" id="bootstrap-progress" style="width: 60%;"></div>
+              </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header">
+                <span>TAILWIND CSS</span>
+                <span class="skill-percent" id="tailwind-percent">40%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="tailwind-progress" style="width: 40%;"></div>
+            </div>
+        </div>
+       </div>
+  </section>
